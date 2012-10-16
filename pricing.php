@@ -6,6 +6,7 @@ $current_price = mysql_real_escape_string($_POST['current_price']);
 $days = mysql_real_escape_string($_POST['days']);
 if(!$current_price||!$days){
 $form_error ="Please Enter values";
+
 }
 $conn = mysql_connect( "localhost", "root", "" );
 $db_selected=mysql_select_db( "test", $conn );    #selects a database
